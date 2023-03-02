@@ -1,0 +1,32 @@
+.header {
+        display: grid;
+        grid-template-columns:1fr min-content ;
+        grid-template-rows: min-content min-content;
+}
+.header-top {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:768px) {
+    .header {
+        grid-template-columns: 1fr ;
+        grid-template-rows: min-content min-content min-content;
+}
+    .header-top {
+        justify-content: flex-start;
+    }
+}
+@media (min-width:992px) {
+   .header { grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+ }
+.header-top {
+   grid-column: 2 / 3;
+   grid-row: 1 / 2;
+   justify-content: flex-end;
+ }
+ .logo-box {
+    grid-row: 1 / -1;
+ }
+ }
